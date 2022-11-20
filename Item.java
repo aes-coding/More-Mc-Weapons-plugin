@@ -138,7 +138,7 @@ public class Item {
     public static void flintSword(){
         ItemStack item = new ItemStack(Material.WOODEN_SWORD);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("Flint Sword");
+        meta.setDisplayName("Flint Blade");
         List<String> lore = new ArrayList<>();
         lore.add("Made out of Flint");
         meta.setLore(lore);
@@ -188,7 +188,7 @@ public class Item {
         ShapedRecipe recipe = new ShapedRecipe(NamespacedKey.minecraft("sinisterblade"), item);
         recipe.shape(" R ",
                 "RNR",
-                "S  ");
+                " S ");
         recipe.setIngredient('R', Material.REDSTONE);
         recipe.setIngredient('N', Material.NETHERITE_INGOT);
         recipe.setIngredient('S', Material.STICK);
